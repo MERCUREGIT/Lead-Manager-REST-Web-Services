@@ -8,7 +8,7 @@
 
 
 @RestResource(urlMapping='/Lead/v1/*')
-global with sharing class LeadManager {
+global without sharing class LeadManager {
     RestRequest request = RestContext.request;
     RestResponse res = RestContext.response;
 
