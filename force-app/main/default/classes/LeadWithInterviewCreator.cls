@@ -1,3 +1,11 @@
+/**
+ * author: Ngum Buka Fon Nyuydze
+ * organisation: Hi Corp
+ * email: ngumbukafon@gmail.com
+ * created-on: 11/01/2023
+ * Description: Helper class for generating lead and lead interview Questions from JSON string
+ */
+
 public without sharing class LeadWithInterviewCreator {
     public static void generateLeadInterview(LeadWithInterview instance){
         lead leadInstance = new lead();
@@ -50,37 +58,7 @@ public without sharing class LeadWithInterviewCreator {
 
 
     public static void generateLeadInterview(list<LeadWithInterview> instanceList){
-        // Map<string,LeadWithInterview> newInterviewLeadEmailMap = new Map<string,LeadWithInterview>();
-        // for(LeadWithInterview instance : instanceList){
-        //     newInterviewEmailList.put(instance.email.toUpperCase(), instance);
-        // }
-        // set<lead> existingLeadList  = new set<lead>([SELECT id, email FROM Lead WHERE email in:newInterviewLeadEmailMap.keySet()]);
         
-        // for(lead instance: existingLeadList){
-        //     if(newInterviewLeadEmailMap.containsKey(instance.email.toUpperCase())) {
-        //         newInterviewLeadEmailMap.get(instance.email.toUpperCase()).id = instance.id;
-        //     }
-        // }
-        // set<lead> leadsToCreateOrUpdate = new set<lead>();
-        // set<lead> leadsInterviewsToCreateOrUpdate = new set<lead>();
-        // for( LeadWithInterview  instance : newInterviewLeadEmailMap.values()){
-        //     lead leadInstance = new lead();
-        //     leadInstance.id = instance.id;
-        //     leadInstance.LastName = instance.lastName;
-        //     leadInstance.FirstName = instance.firstName;
-        //     leadInstance.City = instance.city;
-        //     leadInstance.State = instance.stateProvince;
-        //     leadInstance.PostalCode = instance.postalCode;
-        //     leadInstance.Phone = instance.primaryPhone;
-        //     leadInstance.Email = instance.email;
-        //     leadInstance.leadOid__c = instance.leadOid;
-        //     leadInstance.LeadSource = instance.leadSource;
-        //     leadInstance.Company = 'Company Name';
-        //     leadsToCreateOrUpdate.add(leadInstance);
-        // }
-
-        // list<lead> leadsToCreateOrUpdateList = new list<lead>(leadsToCreateOrUpdate);
-        // upsert leadsToCreateOrUpdateList;
 
     }
 }
