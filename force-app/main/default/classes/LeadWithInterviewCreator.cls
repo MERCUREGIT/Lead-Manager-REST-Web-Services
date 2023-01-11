@@ -55,10 +55,4 @@ public without sharing class LeadWithInterviewCreator {
         upsert questionAndAnswers;
        }
     }
-
-
-    public static void generateLeadInterview(list<LeadWithInterview> instanceList){
-        
-
-    }
 }

@@ -6,8 +6,8 @@
  * Description: Global Apex Type for lead objects with associated interview objects
  */
 
-global without sharing class LeadWithInterview{
-    public id id ='';
+global class LeadWithInterview{
+    public id id ;
     public string firstName;
     public string lastName;
     public string address;

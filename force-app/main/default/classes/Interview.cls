@@ -6,7 +6,7 @@
  * Description: Interview Class for question and Answers
  */
 
-global  without sharing class Interview{
+global class Interview{
     public String question;
     public String answer;
 }

@@ -9,20 +9,10 @@
 
 @RestResource(urlMapping='/Lead/v1/*')
 global without sharing class LeadManager {
-    RestRequest request = RestContext.request;
-    RestResponse res = RestContext.response;
-
     @HttpPost
     global static void createLead() {
         RestRequest request = RestContext.request;
         string jsonString = request.requestBody.toString();
-        try {
-            list<LeadWithInterview> instance;
-            instance= (list<LeadWithInterview>) JSON.deserialize(jsonString, list<LeadWithInterview>.class);
-            LeadWithInterviewCreator.generateLeadInterview(instance);
-        } catch (JSONException e) {
-            System.debug('The following exception has occurred: ' + e.getMessage());
-        } 
         try {
             LeadWithInterview instance = (LeadWithInterview) JSON.deserialize(jsonString, LeadWithInterview.class);
             LeadWithInterviewCreator.generateLeadInterview(instance);
@@ -30,5 +20,6 @@ global without sharing class LeadManager {
         } catch (JSONException e) {
             System.debug('The following exception has occurred: ' + e.getMessage());
         }
+        
     }
 }
