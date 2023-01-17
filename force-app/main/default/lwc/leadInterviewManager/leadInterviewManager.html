@@ -20,7 +20,6 @@
     </template>
     <lightning-card title={tableTitle} icon-name="custom:custom63">
         <div class="slds-m-around_medium">
-            <template if:true={leadInterviewsList}>
                 <lightning-datatable
                     key-field="Id"
                     data={leadInterviewsList}
@@ -29,10 +28,8 @@
                     draft-values={draftValues}
                     onrowaction={handleRowAction}
                     hide-checkbox-column="true"
-                    is-loading={isLeadInterviewsListLoading}
-                    >
+                    is-loading={isLeadInterviewsListLoading}>
                 </lightning-datatable>
-            </template>
         </div>
     </lightning-card>
 </template>

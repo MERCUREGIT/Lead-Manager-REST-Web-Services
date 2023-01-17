@@ -65,6 +65,7 @@ export default class LeadInterviewManager extends LightningElement {
             this.fecthError = undefined;
         } else if (error) {
             this.fecthError = error;
+            console.log('ERROR ::::::::',this.fecthError);  
             this.leadInterviewsList = undefined;
         }
     }
